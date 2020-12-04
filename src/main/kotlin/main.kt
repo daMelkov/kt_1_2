@@ -12,13 +12,13 @@ fun main() {
             return
         }
 
-        val amount = readLine()!!.toInt()
+        val amount = input.toInt()
         if(amount < minComission) {
             println("Сумма недостаточна для перевода. Минимум: $minComission")
             continue
         }
 
-        val comission = if(amount * percentComission > minComission) amount * percentComission else minComission
+        val comission = if(amount * percentComission > minComission) (amount * percentComission).toInt() else minComission
         println("Комиссия составит: $comission")
     }
 }
