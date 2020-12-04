@@ -16,8 +16,8 @@ fun main() {
         val comission = if(amount * percentComission > minComission) amount * percentComission else minComission
         println("Комиссия составит: $comission")
 
-        print("Завершить работу, y/n?:")
-        if(readLine() == "y") {
+        print("Продолжить работу, y/n?:")
+        if(readLine() == "n") {
             return
         }
     }
